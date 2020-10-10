@@ -57,6 +57,9 @@ Blockly.Msg.VARIABLES_DYNAMIC_HUE = '310';
 /** @type {string} */
 /// {{Notranslate}} Hue value for all procedure blocks.
 Blockly.Msg.PROCEDURES_HUE = '290';
+/** @type {string} */
+/// {{Notranslate}} Hue value for all web blocks.
+Blockly.Msg.WEB_HUE = '60';
 
 /** @type {string} */
 /// default name - A simple, general default name for a variable, preferably short.
@@ -1628,3 +1631,30 @@ Blockly.Msg.WORKSPACE_ARIA_LABEL = 'Blockly Workspace';
 /// that block have warnings attached to them. It should inform the user that the
 /// block they collapsed contains blocks that have warnings.
 Blockly.Msg.COLLAPSED_WARNINGS_WARNING = 'Collapsed blocks contain warnings.';
+
+/** @type {string} */
+Blockly.Msg.WEB_SET_INNER_HTML_TITLE = 'set element %1 content to %2';
+
+/** @type {string} */
+Blockly.Msg.WEB_GET_INNER_HTML_TITLE = 'get element %1 content';
+
+/** @type {string} */
+Blockly.Msg.WEB_ON_CLICK_TITLE = 'when click on %1 %2 %3';
+
+/** @type {string} */
+Blockly.Msg.WEB_TOGGLE_CLASS_TITLE = 'toggle class %1 on element %2';
+
+/** @type {string} */
+Blockly.Msg.WEB_ADD_CLASS_TITLE = 'add class %1 on element %2';
+
+/** @type {string} */
+Blockly.Msg.WEB_REMOVE_CLASS_TITLE = 'remove class %1 on element %2';
+
+/** @type {string} */
+Blockly.Msg.WEB_HAS_CLASS_TITLE = 'element %1 has class %2 ?';
+
+/** @type {string} */
+Blockly.Msg.WEB_ON_EVENT_TITLE = 'on %1 event for %2 %3 %4';
+
+/** @type {string} */
+Blockly.Msg.WEB_QUERY_SELECTOR_ALL_TITLE = 'get all elements matching %1';

@@ -135,7 +135,7 @@
 	"LOGIC_TERNARY_CONDITION": "test",
 	"LOGIC_TERNARY_IF_TRUE": "si vrai",
 	"LOGIC_TERNARY_IF_FALSE": "si faux",
-	"LOGIC_TERNARY_TOOLTIP": "Vérifie la condition indiquée dans « test ». Si elle est vraie, renvoie la valeur « si vrai » ; sinon renvoie la valeur « si faux ».",
+	"LOGIC_TERNARY_TOOLTIP": "Vérifie la condition indiquée dans « test ». Si elle est vraie, renvoie la valeur « si vrai » , sinon renvoie la valeur « si faux ».",
 	"MATH_NUMBER_HELPURL": "https://fr.wikipedia.org/wiki/Nombre",
 	"MATH_NUMBER_TOOLTIP": "Un nombre.",
 	"MATH_ARITHMETIC_HELPURL": "https://fr.wikipedia.org/wiki/Arithm%C3%A9tique",
@@ -368,5 +368,14 @@
 	"PROCEDURES_IFRETURN_WARNING": "Attention : ce bloc ne peut être utilisé que dans une définition de fonction.",
 	"WORKSPACE_COMMENT_DEFAULT_TEXT": "Expliquez quelque chose...",
 	"WORKSPACE_ARIA_LABEL": "Espace de travail de Blocky",
-	"COLLAPSED_WARNINGS_WARNING": "Les blocs repliés contiennent des avertissements."
+	"COLLAPSED_WARNINGS_WARNING": "Les blocs repliés contiennent des avertissements.",
+	"WEB_SET_INNER_HTML_TITLE" : "attribut à l'élément %1 le contenu %2",
+	"WEB_GET_INNER_HTML_TITLE" : "contenu de l'élément %1",
+	"WEB_ON_CLICK_TITLE" : "quand on clique sur %1 %2 %3",
+	"WEB_TOGGLE_CLASS_TITLE" : "active/desactive la classe %1 sur l'élément %2",
+	"WEB_ADD_CLASS_TITLE" : "ajoute la classe %1 à l'élément %2",
+	"WEB_REMOVE_CLASS_TITLE" : "supprime la classe %1 de l'élément %2",
+	"WEB_HAS_CLASS_TITLE" : "l'élément %1 contient-il la classe %2 ?",
+	"WEB_ON_EVENT_TITLE" : "quand l'évènement %1 est déclenchée sur l'élément %2 %3 %4",
+	"WEB_QUERY_SELECTOR_ALL_TITLE" : "récupère tous les éléments correspondant à %1"
 }

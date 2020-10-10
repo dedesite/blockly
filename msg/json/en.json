@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2020-09-24 04:06:08.758361",
+		"lastupdated": "2020-10-10 21:09:50.413685",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -404,5 +404,14 @@
 	"PROCEDURES_IFRETURN_WARNING": "Warning: This block may be used only within a function definition.",
 	"WORKSPACE_COMMENT_DEFAULT_TEXT": "Say something...",
 	"WORKSPACE_ARIA_LABEL": "Blockly Workspace",
-	"COLLAPSED_WARNINGS_WARNING": "Collapsed blocks contain warnings."
+	"COLLAPSED_WARNINGS_WARNING": "Collapsed blocks contain warnings.",
+	"WEB_SET_INNER_HTML_TITLE": "set element %1 content to %2",
+	"WEB_GET_INNER_HTML_TITLE": "get element %1 content",
+	"WEB_ON_CLICK_TITLE": "when click on %1 %2 %3",
+	"WEB_TOGGLE_CLASS_TITLE": "toggle class %1 on element %2",
+	"WEB_ADD_CLASS_TITLE": "add class %1 on element %2",
+	"WEB_REMOVE_CLASS_TITLE": "remove class %1 on element %2",
+	"WEB_HAS_CLASS_TITLE": "element %1 has class %2 ?",
+	"WEB_ON_EVENT_TITLE": "on %1 event for %2 %3 %4",
+	"WEB_QUERY_SELECTOR_ALL_TITLE": "get all elements matching %1"
 }

@@ -64,7 +64,7 @@ var JSCOMP_ERROR = [
   'deprecated',
   'deprecatedAnnotations',
   'duplicateMessage',
-  'es5Strict',
+  // 'es5Strict',
   'externsValidation',
   'functionParams',
   'globalThis',
@@ -114,7 +114,7 @@ function compile(compilerOptions, opt_verbose, opt_warnings_as_error,
   const options = {};
   options.compilation_level = 'SIMPLE_OPTIMIZATIONS';
   options.warning_level = opt_verbose ? 'VERBOSE' : 'DEFAULT';
-  options.language_in = 'ECMASCRIPT5_STRICT';
+  options.language_in = 'ECMASCRIPT_2015';
   options.language_out = 'ECMASCRIPT5_STRICT';
   options.rewrite_polyfills = false;
   options.hide_warnings_for = 'node_modules';
