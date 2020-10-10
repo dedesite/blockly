@@ -1,9 +1,11 @@
 {
-  "name": "blockly",
+  "name": "blockly-web",
   "version": "3.20200924.2",
-  "description": "Blockly is a library for building visual programming editors.",
+  "description": "A small fork of Blockly that handle simple web api for DOM manipulation",
   "keywords": [
-    "blockly"
+    "blockly",
+    "web api",
+    "es6"
   ],
   "repository": {
     "type": "git",
