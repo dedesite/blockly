@@ -298,6 +298,14 @@ Blockly.JavaScript['text_print'] = function(block) {
   return 'window.alert(' + msg + ');\n';
 };
 
+Blockly.JavaScript['text_print_console'] = function(block) {
+  // Print statement. Use console.log instead of alert
+  var msg = Blockly.JavaScript.valueToCode(block, 'TEXT',
+      Blockly.JavaScript.ORDER_NONE) || '\'\'';
+  return 'console.log(' + msg + ');\n';
+};
+
+
 Blockly.JavaScript['text_prompt_ext'] = function(block) {
   // Prompt function.
   if (block.getField('TEXT')) {

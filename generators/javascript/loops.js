@@ -149,6 +149,27 @@ Blockly.JavaScript['controls_forEach'] = function(block) {
   return code;
 };
 
+Blockly.JavaScript['controls_forOf'] = function(block) {
+    // For of loop.
+    var variable0 = Blockly.JavaScript.variableDB_.getName(
+        block.getFieldValue('VAR'), Blockly.VARIABLE_CATEGORY_NAME);
+    var argument0 = Blockly.JavaScript.valueToCode(block, 'LIST',
+        Blockly.JavaScript.ORDER_ASSIGNMENT) || '[]';
+    var branch = Blockly.JavaScript.statementToCode(block, 'DO');
+    branch = Blockly.JavaScript.addLoopTrap(branch, block);
+    var code = '';
+    // Cache non-trivial values to variables to prevent repeated look-ups.
+    var listVar = argument0;
+    if (!argument0.match(/^\w+$/)) {
+        listVar = Blockly.JavaScript.variableDB_.getDistinctName(
+            variable0 + '_list', Blockly.VARIABLE_CATEGORY_NAME);
+        code += 'var ' + listVar + ' = ' + argument0 + ';\n';
+    }
+
+    code += 'for (' + variable0 + ' of ' + listVar + ') {\n' + branch + '}\n';
+    return code;
+};
+
 Blockly.JavaScript['controls_flow_statements'] = function(block) {
   // Flow statements: continue, break.
   var xfix = '';

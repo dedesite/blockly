@@ -404,6 +404,29 @@ Blockly.Blocks['text_print'] = {
   }
 };
 
+Blockly.Blocks['text_print_console'] = {
+  /**
+   * Block for print statement.
+   * @this {Blockly.Block}
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg['TEXT_PRINT_TITLE'],
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "TEXT"
+        }
+      ],
+      "previousStatement": null,
+      "nextStatement": null,
+      "style": "text_blocks",
+      "tooltip": Blockly.Msg['TEXT_PRINT_TOOLTIP'],
+      "helpUrl": Blockly.Msg['TEXT_PRINT_HELPURL']
+    });
+  }
+};
+
 Blockly.Blocks['text_prompt_ext'] = {
   /**
    * Block for prompt function (external message).

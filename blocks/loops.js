@@ -181,6 +181,36 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
       "controls_forEach_tooltip"
     ]
   },
+  // Block for 'for of' loop. Which is the way to go since ES6
+  {
+    "type": "controls_forOf",
+    "message0": "%{BKY_CONTROLS_FOREACH_TITLE}",
+    "args0": [
+      {
+        "type": "field_variable",
+        "name": "VAR",
+        "variable": null
+      },
+      {
+        "type": "input_value",
+        "name": "LIST",
+        "check": "Array"
+      }
+    ],
+    "message1": "%{BKY_CONTROLS_REPEAT_INPUT_DO} %1",
+    "args1": [{
+      "type": "input_statement",
+      "name": "DO"
+    }],
+    "previousStatement": null,
+    "nextStatement": null,
+    "style": "loop_blocks",
+    "helpUrl": "%{BKY_CONTROLS_FOREACH_HELPURL}",
+    "extensions": [
+      "contextMenu_newGetVariableBlock",
+      "controls_forEach_tooltip"
+    ]
+  },
   // Block for flow statements: continue, break.
   {
     "type": "controls_flow_statements",
