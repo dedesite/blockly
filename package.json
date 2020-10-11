@@ -9,14 +9,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/google/blockly.git"
+    "url": "https://github.com/dedesite/blockly-web.git"
   },
   "bugs": {
-    "url": "https://github.com/google/blockly/issues"
+    "url": "https://github.com/dedesite/blockly-web/issues"
   },
-  "homepage": "https://developers.google.com/blockly/",
+  "homepage": "",
   "author": {
-    "name": "Neil Fraser"
+    "name": "Andréas Livet"
   },
   "scripts": {
     "build": "gulp build",
