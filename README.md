@@ -10,7 +10,10 @@ A small fork of Blockly that add web API blocks :
 * Add also a block for the ES6 `for..of` syntax to be used in replacement of `for..in`
 * And add a `console.log` block to be used instead of `alert`
 
+
 *Note : I removed ES5 strict restriction on the source code, because I don't wan't the project to be upstreamed.*
+
+Most of the modified code can be found here :
 
 
 Google's Blockly is a web-based, visual programming editor.  Users can drag

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web development demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="../../blockly_compressed.js"></script>
+    <script src="../../blocks_compressed.js"></script>
+    <script src="../../javascript_compressed.js"></script>
+    <script src="../../appengine/storage.js"></script>
+    <script src="web.js"></script>
+</head>
+
+<body>
+    <table width="100%" height="100%">
+        <tr>
+            <td>
+                <h1 class="blockly-title">Web development demo</h1>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2>
+                <table width="100%">
+                    <tr id="tabRow" height="1em">
+                        <td id="tab_blocks" class="tabon">...</td>
+                        <td class="tabmin tab_collapse">&nbsp;</td>
+                        <td id="tab_javascript" class="taboff tab_collapse">JavaScript</td>
+                        <td class="tabmin">&nbsp;</td>
+                        <td id="tab_project" class="taboff tab_collapse">TicTacToe</td>
+                        <td class="tabmin">&nbsp;</td>
+                        <td id="tab_code" class="taboff">
+                            <select id="code_menu"></select>
+                        </td>
+                        <td class="tabmax">
+                            <button id="trashButton" class="blockly notext" title="...">
+                                <img src='blockly/media/1x1.gif' class="trash icon21">
+                            </button>
+                            <button id="runButton" class="blockly notext primary" title="...">
+                                <img src='blockly/media/1x1.gif' class="run icon21">
+                            </button>
+                            <button id="exportButton" title="export" class="blockly">
+                                Export
+                            </button>
+                            <button id="importButton" title="import" class="blockly">
+                                Import
+                                <input id="file-reader" type='file' style="display:none;"/>
+                            </button>
+                            <select id="languageMenu"></select>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="99%" colspan=2 id="content_area">
+            </td>
+        </tr>
+    </table>
+    <div id="content_blocks" class="content"></div>
+    <pre id="content_javascript" class="content prettyprint lang-js"></pre>
+    <div id="content_project" class="content">
+        <!-- PUT HERE YOUR WEB DEVELOPEMENT PROJECT HTML CODE -->
+    </div>
+    <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+        <category name="%{BKY_CATLOGIC}" colour="%{BKY_LOGIC_HUE}">
+            <block type="controls_if"></block>
+            <block type="logic_compare"></block>
+            <block type="logic_operation"></block>
+            <block type="logic_negate"></block>
+            <block type="logic_boolean"></block>
+            <block type="logic_null"></block>
+            <block type="logic_ternary"></block>
+        </category>
+        <category name="%{BKY_CATLOOPS}" colour="%{BKY_LOOPS_HUE}">
+            <block type="controls_forOf"></block>
+            <block type="controls_flow_statements"></block>
+        </category>
+        <category name="%{BKY_CATMATH}" colour="%{BKY_MATH_HUE}">
+            <block type="math_number">
+                <field name="NUM">123</field>
+            </block>
+            <block type="math_arithmetic">
+                <value name="A">
+                    <shadow type="math_number">
+                        <field name="NUM">1</field>
+                    </shadow>
+                </value>
+                <value name="B">
+                    <shadow type="math_number">
+                        <field name="NUM">1</field>
+                    </shadow>
+                </value>
+            </block>
+        </category>
+        <category name="%{BKY_CATTEXT}" colour="%{BKY_TEXTS_HUE}">
+            <block type="text"></block>
+            <block type="text_join"></block>
+            <block type="text_print_console"></block>
+            <block type="text_prompt"></block>
+            <block type="text_isEmpty">
+                <value name="VALUE">
+                    <shadow type="text">
+                        <field name="TEXT"></field>
+                    </shadow>
+                </value>
+            </block>
+        </category>
+        <category name="%{BKY_CATLISTS}" colour="%{BKY_LISTS_HUE}">
+            <block type="lists_create_with"></block>
+            <block type="lists_length"></block>
+        </category>
+        <category name="Web" colour="%{BKY_WEB_HUE}">
+            <block type="web_set_inner_html"></block>
+            <block type="web_get_inner_html"></block>
+            <block type="web_on_click"></block>
+            <block type="web_toggle_class"></block>
+            <block type="web_add_class"></block>
+            <block type="web_remove_class"></block>
+            <block type="web_has_class"></block>
+            <block type="web_query_selector_all"></block>
+        </category>
+        <sep></sep>
+        <category name="%{BKY_CATVARIABLES}" colour="%{BKY_VARIABLES_HUE}" custom="VARIABLE"></category>
+        <category name="%{BKY_CATFUNCTIONS}" colour="%{BKY_PROCEDURES_HUE}" custom="PROCEDURE"></category>
+    </xml>
+</body>
+
+</html>

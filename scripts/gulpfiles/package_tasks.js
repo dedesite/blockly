@@ -58,7 +58,13 @@ function packageCommonJS(namespace, dependencies) {
  * This task copies source files into the distribution directory.
  */
 function packageSources() {
-  return gulp.src(['core/**/**.js', 'blocks/**.js', 'generators/**/**.js', 'appengine/storage.js'],
+  return gulp.src([
+    'core/**/**.js',
+    'blocks/**.js',
+    'generators/**/**.js',
+    'appengine/storage.js',
+    'demos/web/**/**.*'
+    ],
       {base: '.'})
     .pipe(gulp.dest(packageDistribution));
 };
