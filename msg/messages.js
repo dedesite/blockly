@@ -60,6 +60,9 @@ Blockly.Msg.PROCEDURES_HUE = '290';
 /** @type {string} */
 /// {{Notranslate}} Hue value for all web blocks.
 Blockly.Msg.WEB_HUE = '60';
+/** @type {string} */
+/// {{Notranslate}} Hue value for all canvas blocks.
+Blockly.Msg.CANVAS_HUE = '0';
 
 /** @type {string} */
 /// default name - A simple, general default name for a variable, preferably short.
@@ -1632,11 +1635,15 @@ Blockly.Msg.WORKSPACE_ARIA_LABEL = 'Blockly Workspace';
 /// block they collapsed contains blocks that have warnings.
 Blockly.Msg.COLLAPSED_WARNINGS_WARNING = 'Collapsed blocks contain warnings.';
 
+// Web Blocks.
 /** @type {string} */
 Blockly.Msg.WEB_SET_INNER_HTML_TITLE = 'set element %1 content to %2';
 
 /** @type {string} */
 Blockly.Msg.WEB_GET_INNER_HTML_TITLE = 'get element %1 content';
+
+/** @type {string} */
+Blockly.Msg.WEB_GET_INPUT_VALUE_TITLE = 'get input element  %1 value';
 
 /** @type {string} */
 Blockly.Msg.WEB_ON_CLICK_TITLE = 'when click on %1 %2 %3';
@@ -1654,7 +1661,44 @@ Blockly.Msg.WEB_REMOVE_CLASS_TITLE = 'remove class %1 on element %2';
 Blockly.Msg.WEB_HAS_CLASS_TITLE = 'element %1 has class %2 ?';
 
 /** @type {string} */
-Blockly.Msg.WEB_ON_EVENT_TITLE = 'on %1 event for %2 %3 %4';
+Blockly.Msg.WEB_ON_EVENT_TITLE = 'on %1 event for %2 %3 %4 %5';
 
 /** @type {string} */
 Blockly.Msg.WEB_QUERY_SELECTOR_ALL_TITLE = 'get all elements matching %1';
+
+
+// Canvas Blocks.
+/** @type {string} */
+Blockly.Msg.CANVAS_DRAW_LINE_TITLE = 'draw line on canvas %1 from x %2 y %3 to x %4 y %5';
+
+/** @type {string} */
+Blockly.Msg.CANVAS_DRAW_RECTANGLE_TITLE = 'draw rectangle on canvas %1 at x %2 y %3 width %4 height %5';
+
+/** @type {string} */
+Blockly.Msg.CANVAS_DRAW_CIRCLE_TITLE = 'draw circle on canvas %1 center x %2 y %3 radius %4';
+
+/** @type {string} */
+Blockly.Msg.CANVAS_PENCIL_START_TITLE = 'dtart drawing with pencil on canvas %1 at x %2 y %3';
+
+/** @type {string} */
+Blockly.Msg.CANVAS_PENCIL_MOVE_TITLE = 'move pencil on canvas %1 at x %2 y %3';
+
+/** @type {string} */
+Blockly.Msg.CANVAS_PENCIL_STOP_TITLE = 'stop drawing with pencil on canvas %1';
+
+/** @type {string} */
+Blockly.Msg.CANVAS_DRAWING_MODE_TITLE = 'change drawing mode on canvas %1 to %2'
+
+/** @type {string} */
+Blockly.Msg.CANVAS_DRAWING_MODE_PENCIL = 'pencil';
+
+/** @type {string} */
+Blockly.Msg.CANVAS_DRAWING_MODE_ERASER = 'eraser';
+
+/** @type {string} */
+Blockly.Msg.CANVAS_SET_STROKE_COLOR_TITLE = 'set stroke color on canvas %1 to %2';
+
+/** @type {string} */
+Blockly.Msg.CANVAS_SET_LINE_WIDTH_TITLE = 'set line width on canvas %1 to %2';
+
+Blockly.Msg.CANVAS_GET_MOUSE_POS_TITLE = 'get mouse position on canvas %1 with event %2 for %3 %4';

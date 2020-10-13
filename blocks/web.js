@@ -48,6 +48,21 @@ Blockly.defineBlocksWithJsonArray([
   "helpUrl": ""
 },
 {
+  "type": "web_get_input_value",
+  "message0": "%{BKY_WEB_GET_INPUT_VALUE_TITLE}",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "INPUT_ELEMENT"
+    }
+  ],
+  "inputsInline": true,
+  "output": "String",
+  "colour": "%{BKY_WEB_HUE}",
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
   "type": "web_on_click",
   "message0": "%{BKY_WEB_ON_CLICK_TITLE}",
   "args0": [
@@ -218,6 +233,11 @@ Blockly.defineBlocksWithJsonArray([
     {
       "type": "field_variable",
       "name": "EVENT_VAR",
+      "variable": "event"
+    },
+    {
+      "type": "field_variable",
+      "name": "TARGET_VAR",
       "variable": "target"
     },
     {

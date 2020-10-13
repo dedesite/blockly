@@ -10,6 +10,11 @@ A small fork of Blockly that add web API blocks :
 * Add also a block for the ES6 `for..of` syntax to be used in replacement of `for..in`
 * And add a `console.log` block to be used instead of `alert`
 
+TODO :
+* Add `getMousePos`
+* Add `line`, `rectangle`, `circle`, `startPencil` et `stopPencil` (with `destination-out` and `source-over` modes)
+* Add canvas change `strokeStyle` and `lineWidth`
+* Add get input value
 
 *Note : I removed ES5 strict restriction on the source code, because I don't wan't the project to be upstreamed.*
 
